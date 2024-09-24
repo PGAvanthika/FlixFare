@@ -7,7 +7,7 @@ import Menu from "./Menu";
 function App() {
   return (
     <div>
-      <p id="rec">RECOMMENDED MOVIES</p>
+      <p id="rec">RECOMMENDED MOVIES by FF</p>
       <hr />
       <br />
      
