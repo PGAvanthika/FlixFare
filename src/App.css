@@ -1,0 +1,48 @@
+/* Title section */
+#title img {
+  height: 70px; 
+  margin-right: 20px; 
+}
+
+/* Background image section */
+
+/* Movie containers */
+#mov {
+  float: left;
+  padding: 15px;
+  margin: 19px;
+  box-sizing: border-box; /* Ensure padding and margin are included in width and height calculations */
+}
+
+/* Movie images */
+#imgm {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 290px;
+  width: 220px;
+  border-radius: 15px;
+}
+
+/* General paragraph styling */
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(103, 19, 5);
+}
+
+/* Main container */
+#main {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Recommended movies section */
+#rec {
+  text-align: center;
+  font-size: xx-large;
+  color: rgb(103, 19, 5);
+}

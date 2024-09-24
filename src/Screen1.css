@@ -1,0 +1,115 @@
+/* src/components/Screen1.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.seating-chart {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#max-selectable {
+  width: 50px;
+  padding: 5px;
+}
+
+.seating-rows {
+  margin-top: 20px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px; /* Adds spacing between seats */
+}
+
+.row-label {
+  width: 20px; /* Ensure all row labels have the same width */
+  font-weight: bold;
+  text-align: center;
+  margin-right: 20px; /* Add consistent spacing between row label and seats */
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seat.available {
+  background-color: #4caf50;
+  color: white;
+}
+
+.seat.selected {
+  background-color: #2196f3;
+  color: white;
+}
+
+.seat.booked {
+  background-color: #f44336;
+  color: white;
+  cursor: not-allowed;
+}
+
+.platinum {
+  color: gold;
+}
+
+.gold {
+  color: orange;
+}
+
+.silver {
+  color: #c0c0c0;
+}
+
+.row-pricing {
+  margin-left: 70px; /* Adjust this to ensure pricing is aligned with the seats */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .seating-chart {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .seat {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+}
